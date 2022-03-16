@@ -4,4 +4,4 @@ curriculum vitae
 
 https://AnastasiaShalukhina.github.io/rsschool-cv/cv
 
-https://AnastasiaShalukhina.github.io/rsschool-cv/index.html
+https://AnastasiaShalukhina.github.io/rsschool-cv/index
