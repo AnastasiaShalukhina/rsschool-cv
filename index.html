@@ -4,13 +4,164 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>AnastasiaShalukhina</title>
 </head>
 <body>
-  <div class="title">Anastasya Shalukhina</div>
-  <div class="data">Nowadays I am assistant of pharmacology department (since 2011), provide laboratory classes and deliver lectures in
-  Rusian and English languages. Also I am deputy manager of head of department and solve moral building activity
-  questions. Teachers meet with students and participate in different activities</div>
+  <header class="header">
+    <div class="header-wrapper">
+      <h2 class="logo">CV</h2>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-wrapper">
+  
+      <section class="contacts">
+        <div class="avatar">
+          <img src="./img/avatar.jpg" alt="avatar">
+        </div>
+  
+        <div id="contacts" class="contacts-data">
+          <h1 class="user-title">Anastasyia Shalukhina Junior Web-Developer</h1>
+  
+          <div class="socials">
+            <h2 class="social-header">Contacts</h2>
+            <div class="links-container">
+              <ul class="contacts-list">
+                <li class="discord-link">
+                  <img src="./icons/icons8-discord-48.png" alt="discord">
+                  <a href="https://discord.com/">Discord: AnastasiaShalukhina#8572</a>
+                </li>
+                <li class="linkedIn-link">
+                  <img src="./icons/icons8-Link-48.png" alt="LinkedIn">
+                  <a href="https://www.linkedin.com/in/anastasyia-shalukhina-3406b2234/">LinkedIn</a>
+                </li>
+                <li class="email-link">
+                  <img src="./icons/gmail.png" alt="email">
+                  <a href="mailto:exachka4@gmail.com/">Write an email</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="projects" class="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="all-projects">
+          <div class="projects-list">
+            <a href="https://anastasiashalukhina.github.io/Batmen-GLO/" class="batman">Project "Batman" that was done
+              during
+              GLO-Academy intensive classes. Click here to see the result </a>
+            <a href='https://anastasiashalukhina.github.io/youtube-concept/' class="youtube">Project "Youtube-concept"
+              that was
+              done during GLO-Academy intensive classes. Click here to see the result</a>
+          </div>
+          <p class="codewars">
+            Codewars Kata 6 kyu
+          </p>
+          <pre>
+              function recycle(array) { 
+              let result = []; 
+              let paperArr = []; 
+              let glassArr = []; 
+              let orgArr = []; 
+              let plasticArr = []; 
+              
+              for (let elem of array) { 
+              if (elem.material == "paper" || elem.secondMaterial == "paper") { 
+              paperArr.push(elem.type); 
+              } 
+              if (elem.material == "glass" || elem.secondMaterial == "glass") { 
+              glassArr.push(elem.type); 
+              } 
+              if (elem.material == "organic" || elem.secondMaterial == "organic") { 
+              orgArr.push(elem.type); 
+              } 
+              if (elem.material == "plastic" || elem.secondMaterial == "plastic") { 
+              plasticArr.push(elem.type); 
+              } 
+              } 
+              
+              result.push(paperArr, glassArr, orgArr, plasticArr); 
+              return result; 
+              } 
+              </pre>
+        </div>
+      </section>
+  
+      <section id="skills" class="skills">
+        <h2 class="skills-title">Skills</h2>
+        <ul class="slills-list">
+          <li class="slills-item">
+            <img src="./icons/html-5.png" alt="html5" class="skills-item-img">
+          </li>
+          <li class="slills-item">
+            <img src="./icons/css.png" alt="css3" class="skills-item-img">
+          </li>
+          <li class="slills-item">
+            <img src="./icons/sass.png" alt="sass" class="skills-item-img">
+          </li>
+          <li class="slills-item">
+            <img src="./icons/js.png" alt="js" class="skills-item-img">
+          </li>
+          <li class="slills-item">
+            <img src="./icons/git.png" alt="js" class="skills-item-img">
+          </li>
+          <li class="slills-item">
+            <img src="./icons/github.png" alt="js" class="skills-item-img">
+          </li>
+        </ul>
+      </section>
+  
+      <section id="about" class="about">
+        <h2 class="about-title">Briefly about myself</h2>
+        <p class="education">
+          Graduated Belarusian State Medical University at 2011. Assistant and senior lecturer on pharmacology department
+          2011-2022. Also deputy manager of head of department and solve moral building activity questions. Have 4
+          scientific works, participated in international conferences. Provided classes and delivered lectures for
+          students on Rusian and English.</p>
+        <p class="english-level">In different categories (Grammar, Reading, Speaking and Listening) level of English
+          varies from B1 to C1.</p>
+        <p class="web">Nowadays continue with web-developer education by self-education.</p>
+  
+        <p class="hobbies">
+          Like active life-style - bike, travelling, dancing and karate.
+        </p>
+      </section>
+  
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <ul class="footer-list">
+        <li class="github">
+          <a href="https://github.com/AnastasiaShalukhina">Find me in GitHub</a>
+        </li>
+        <li class="year">2022</li>
+        <li class="preschool-logo"><a href="https://rs.school/js/"><img src="./icons/rs_school_js.svg" alt="preschool-logo"></a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
