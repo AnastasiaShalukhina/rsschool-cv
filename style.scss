@@ -104,24 +104,26 @@ $bgrcolor: rgb(231, 255, 222);
     margin-bottom: 30px;
   }
 
-  .links-container {
-    @include display-sp-betw;
+  .contacts-list {
+      @include display-sp-betw;
 
-    .email-link img {
-      width: 48px;
-    }
+      .email-link img {
+          width: 48px;
+        }
+      
+        .discord-link,
+        .linkedIn-link,
+        .email-link {
+          @include display-flexdir-col;
+        }
+      
+        a {
+          @include paragraph;
+          text-decoration: none;
+          margin-top: 20px;
+        }
 
-    .discord-link,
-    .linkedIn-link,
-    .email-link {
-      @include display-flexdir-col;
-    }
-
-    a {
-      @include paragraph;
-      text-decoration: none;
-      margin-top: 20px;
-    }
+  
   }
 }
 

@@ -73,21 +73,21 @@
 .contacts .social-header {
   margin-bottom: 30px;
 }
-.contacts .links-container {
+.contacts .contacts-list {
   display: flex;
   justify-content: space-between;
 }
-.contacts .links-container .email-link img {
+.contacts .contacts-list .email-link img {
   width: 48px;
 }
-.contacts .links-container .discord-link,
-.contacts .links-container .linkedIn-link,
-.contacts .links-container .email-link {
+.contacts .contacts-list .discord-link,
+.contacts .contacts-list .linkedIn-link,
+.contacts .contacts-list .email-link {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contacts .links-container a {
+.contacts .contacts-list a {
   font-family: Arial;
   font-size: 20px;
   font-weight: 400;
