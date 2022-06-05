@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  max-width: 1280px;
+  background-color: rgb(231, 255, 222);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgb(0, 189, 113);
+  border-radius: 50%;
+  background-color: rgb(255, 250, 205);
+}
+
+.nav-menu .nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+.nav-menu .nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+.nav-menu a {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+}
+.nav-menu a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.contacts .avatar img {
+  width: 200px;
+}
+.contacts .contacts-data {
+  width: 80%;
+}
+.contacts .user-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contacts .social-header {
+  margin-bottom: 30px;
+}
+.contacts .contacts-list {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts-list .email-link img {
+  width: 48px;
+}
+.contacts .contacts-list .discord-link,
+.contacts .contacts-list .linkedIn-link,
+.contacts .contacts-list .email-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts .contacts-list a {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.skills {
+  padding: 0 20px;
+}
+.skills .skills-title {
+  text-align: center;
+}
+.skills .slills-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.skills .skills-item-img {
+  width: 80px;
+}
+
+.projects-title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: space-between;
+}
+.all-projects .projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-projects .projects-list .youtube,
+.all-projects .projects-list .batman {
+  width: 70%;
+  margin-top: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(205, 92, 92);
+}
+
+.about {
+  padding: 0 20px;
+}
+.about .about-title {
+  margin-top: 40px;
+}
+.about .education,
+.about .hobbies,
+.about .english-level,
+.about .web {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(41, 41, 41);
+}
+
+.footer-wrapper {
+  max-width: 1280px;
+  background-color: rgb(231, 255, 222);
+  margin: 0 auto;
+}
+.footer-wrapper .footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+}
+.footer-wrapper .footer-list .github a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(205, 92, 92);
+}
+.footer-wrapper .footer-list .preschool-logo img {
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

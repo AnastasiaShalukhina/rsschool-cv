@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+$bgrcolor: rgb(231, 255, 222);
+
+@mixin paragraph {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(41, 41, 41);
+}
+
+@mixin display-sp-betw {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin display-flexdir-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper {
+  max-width: 1280px;
+  background-color: $bgrcolor;
+}
+
+.header-wrapper {
+  @include display-sp-betw;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgb(0, 189, 113);
+  border-radius: 50%;
+  background-color: rgb(255, 250, 205);
+
+
+}
+
+.nav-menu {
+
+  .nav-list {
+    @include display-sp-betw;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  a {
+    @include paragraph;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+}
+
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contacts {
+  @include display-sp-betw;
+  padding: 0 20px;
+
+  .avatar {
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .contacts-data {
+    width: 80%;
+  }
+
+  .user-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .social-header {
+    margin-bottom: 30px;
+  }
+
+  .contacts-list {
+      @include display-sp-betw;
+
+      .email-link img {
+          width: 48px;
+        }
+      
+        .discord-link,
+        .linkedIn-link,
+        .email-link {
+          @include display-flexdir-col;
+        }
+      
+        a {
+          @include paragraph;
+          text-decoration: none;
+          margin-top: 20px;
+        }
+
+  
+  }
+}
+
+.skills {
+  padding: 0 20px;
+
+  .skills-title {
+    text-align: center;
+  }
+
+  .slills-list {
+    @include display-sp-betw;
+    list-style-type: none;
+  }
+
+  .skills-item-img {
+    width: 80px;
+  }
+}
+
+
+
+.projects-title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.all-projects {
+  @include display-sp-betw;
+
+  .projects-list {
+    @include display-flexdir-col;
+
+
+    .youtube,
+    .batman {
+      width: 70%;
+      margin-top: 30px;
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(205, 92, 92);
+    }
+  }
+}
+
+.about {
+  padding: 0 20px;
+
+  .about-title {
+    margin-top: 40px;
+  }
+
+  .education,
+  .hobbies,
+  .english-level,
+  .web {
+    @include paragraph;
+  }
+}
+
+.footer-wrapper {
+  max-width: 1280px;
+  background-color: $bgrcolor;
+  margin: 0 auto;
+
+  .footer-list {
+    @include display-sp-betw;
+    align-items: flex-end;
+    list-style-type: none;
+
+    .github a {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(205, 92, 92);
+    }
+
+    .preschool-logo img {
+      width: 150px;
+    }
+  }
+}
